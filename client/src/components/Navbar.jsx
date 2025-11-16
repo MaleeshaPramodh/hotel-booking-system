@@ -1,5 +1,7 @@
 /* eslint-disable no-undef */
 import React from "react";
+import {Link} from "react-router-dom";
+import{assets} from "../assets/assets";
 
 const Navbar = () => {
     const navLinks = [
@@ -26,7 +28,6 @@ const Navbar = () => {
                 {/* Logo */}
                 <Link to='/'>
                 <img src={assets.logo} alt="logo" className={`h-9 ${isScrolled && "invert opacity-80"}`} />
-                    
                 </Link>
 
                 {/* Desktop Nav */}
